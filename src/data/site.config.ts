@@ -10,8 +10,8 @@ interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
 	author: 'Jinjun Liu', // Site author
-	title: 'Tropical Cyclones', // Site title.
-	description: 'Blog for in-depth research, news, and updates on tropical cyclones.', // Description to display in the meta tags
+	title: "Jinjun Liu's Blog", // Site title.
+	description: 'My personal blog about life, research, and hobbies.', // Description to display in the meta tags
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
 	shareMessage: 'Share this post', // Message to share a post on social media
