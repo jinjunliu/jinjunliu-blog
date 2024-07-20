@@ -3,12 +3,15 @@ import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import tailwind from '@astrojs/tailwind'
 import { remarkReadingTime } from './src/utils/readTime.ts'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://blog.jinjunliu.com/', // Write here your website url
 	markdown: {
-		remarkPlugins: [remarkReadingTime],
+		remarkPlugins: [remarkReadingTime, remarkMath],
+        rehypePlugins: [rehypeKatex],
 		drafts: true,
 		shikiConfig: {
 			theme: 'material-theme-palenight',

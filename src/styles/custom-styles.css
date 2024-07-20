@@ -1,0 +1,14 @@
+/* For block equations */
+.katex-display {
+    color: blue;
+}
+
+/* For inline equations */
+.katex-inline {
+    color: blue;
+}
+
+/* For inline equations */
+.katex {
+    color: blue;
+}
