@@ -73,8 +73,8 @@ importers:
         specifier: ^10.16.4
         version: 10.16.4
       pagefind:
-        specifier: ^1.0.3
-        version: 1.0.3
+        specifier: ^1.1.0
+        version: 1.1.0
       prettier:
         specifier: ^3.0.3
         version: 3.0.3
@@ -1029,6 +1029,7 @@ packages:
   '@humanwhocodes/config-array@0.11.13':
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1036,6 +1037,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.1':
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
+    deprecated: Use @eslint/object-schema instead
 
   '@iarna/toml@2.2.5':
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
@@ -1241,6 +1243,7 @@ packages:
 
   '@motionone/vue@10.16.4':
     resolution: {integrity: sha512-z10PF9JV6SbjFq+/rYabM+8CVlMokgl8RFGvieSGNTmrkQanfHn+15XBrhG3BgUfvmTeSeyShfOHpG0i9zEdcg==}
+    deprecated: Motion One for Vue is deprecated. Use Oku Motion instead https://oku-ui.com/motion
 
   '@n1ru4l/push-pull-async-iterable-iterator@3.2.0':
     resolution: {integrity: sha512-3fkKj25kEjsfObL6IlKPAlHYPq/oYwUkkQ03zsTTiDjD7vg/RxjdiLeCydqtxHZP0JgsXL3D/X5oAkMGzuUp/Q==}
@@ -1258,31 +1261,31 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@pagefind/darwin-arm64@1.0.3':
-    resolution: {integrity: sha512-vsHDtvao3W4iFCxVc4S0BVhpj3E2MAoIVM7RmuQfGp1Ng22nGLRaMP6FguLO8TMabRJdvp4SVr227hL4WGKOHA==}
+  '@pagefind/darwin-arm64@1.1.0':
+    resolution: {integrity: sha512-SLsXNLtSilGZjvqis8sX42fBWsWAVkcDh1oerxwqbac84HbiwxpxOC2jm8hRwcR0Z55HPZPWO77XeRix/8GwTg==}
     cpu: [arm64]
     os: [darwin]
 
-  '@pagefind/darwin-x64@1.0.3':
-    resolution: {integrity: sha512-NhEXHHYmB/hT6lx5rCcmnVTxH+uIkMAd43bzEqMwHQosqTZEIQfwihmV39H+m8yo7jFvz3zRbJNzhAh7G4PiwA==}
+  '@pagefind/darwin-x64@1.1.0':
+    resolution: {integrity: sha512-QjQSE/L5oS1C8N8GdljGaWtjCBMgMtfrPAoiCmINTu9Y9dp0ggAyXvF8K7Qg3VyIMYJ6v8vg2PN7Z3b+AaAqUA==}
     cpu: [x64]
     os: [darwin]
 
   '@pagefind/default-ui@1.0.4':
     resolution: {integrity: sha512-edkcaPSKq67C49Vehjo+LQCpT615v4d7JRhfGzFPccePvdklaL+VXrfghN/uIfsdoG+HoLI1PcYy2iFcB9CTkw==}
 
-  '@pagefind/linux-arm64@1.0.3':
-    resolution: {integrity: sha512-RGsMt4AmGT8WxCSeP09arU7Za6Vf/We4TWHVSbY7vDMuwWql9Ngoib/q1cP9dIAIMdkXh9ePG/S3mGnJYsdzuQ==}
+  '@pagefind/linux-arm64@1.1.0':
+    resolution: {integrity: sha512-8zjYCa2BtNEL7KnXtysPtBELCyv5DSQ4yHeK/nsEq6w4ToAMTBl0K06khqxdSGgjMSwwrxvLzq3so0LC5Q14dA==}
     cpu: [arm64]
     os: [linux]
 
-  '@pagefind/linux-x64@1.0.3':
-    resolution: {integrity: sha512-o+VCKaqImL42scSH1n5gUfppYSNyu3BuGTvtKKgWHmycbL+A3fkFH+ZOFbaLeN7LVTvJqJIOYbk4j2yaq9784Q==}
+  '@pagefind/linux-x64@1.1.0':
+    resolution: {integrity: sha512-4lsg6VB7A6PWTwaP8oSmXV4O9H0IHX7AlwTDcfyT+YJo/sPXOVjqycD5cdBgqNLfUk8B9bkWcTDCRmJbHrKeCw==}
     cpu: [x64]
     os: [linux]
 
-  '@pagefind/windows-x64@1.0.3':
-    resolution: {integrity: sha512-S+Yq4FyvXJm4F+iN/wRiLvEEF8Xs9lTKGtQGaRHXJslQyl65dytDDPIULXJXIadrDbnMrnTt4C2YHmEUIyUIHg==}
+  '@pagefind/windows-x64@1.1.0':
+    resolution: {integrity: sha512-OboCM76BcMKT9IoSfZuFhiqMRgTde8x4qDDvKulFmycgiJrlL5WnIqBHJLQxZq+o2KyZpoHF97iwsGAm8c32sQ==}
     cpu: [x64]
     os: [win32]
 
@@ -3625,9 +3628,11 @@ packages:
 
   glob@7.1.6:
     resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -3837,6 +3842,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -5078,8 +5084,8 @@ packages:
     resolution: {integrity: sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==}
     engines: {node: '>=6'}
 
-  pagefind@1.0.3:
-    resolution: {integrity: sha512-ws7kmMxW6OuxzsOjj3YAx6TYq/54MiE3wfyBM3J5CInbZyBBvM2Z8c8IYvnMkBcb5v2EoB9DewXEekOEiDRu5g==}
+  pagefind@1.1.0:
+    resolution: {integrity: sha512-1nmj0/vfYcMxNEQj0YDRp6bTVv9hI7HLdPhK/vBBYlrnwjATndQvHyicj5Y7pUHrpCFZpFnLVQXIF829tpFmaw==}
     hasBin: true
 
   pako@1.0.11:
@@ -5661,6 +5667,7 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rollup-plugin-visualizer@5.9.2:
@@ -5804,6 +5811,7 @@ packages:
 
   shikiji@0.6.13:
     resolution: {integrity: sha512-4T7X39csvhT0p7GDnq9vysWddf2b6BeioiN3Ymhnt3xcy9tXmDcnsEFVxX18Z4YcQgEE/w48dLJ4pPPUcG9KkA==}
+    deprecated: Shikiji is merged back to Shiki v1.0, please migrate over to get the latest updates
 
   side-channel@1.0.4:
     resolution: {integrity: sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==}
@@ -7256,7 +7264,7 @@ snapshots:
 
   '@emnapi/runtime@0.44.0':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
     optional: true
 
   '@emoji-mart/data@1.1.2': {}
@@ -7461,26 +7469,26 @@ snapshots:
   '@formatjs/ecma402-abstract@1.17.2':
     dependencies:
       '@formatjs/intl-localematcher': 0.4.2
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@formatjs/fast-memoize@2.2.0':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@formatjs/icu-messageformat-parser@2.7.0':
     dependencies:
       '@formatjs/ecma402-abstract': 1.17.2
       '@formatjs/icu-skeleton-parser': 1.6.2
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@formatjs/icu-skeleton-parser@1.6.2':
     dependencies:
       '@formatjs/ecma402-abstract': 1.17.2
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@formatjs/intl-localematcher@0.4.2':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@graphiql/react@0.18.0(@codemirror/language@6.0.0)(@types/react@18.2.31)(graphql@15.8.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
     dependencies:
@@ -7558,7 +7566,7 @@ snapshots:
   '@graphql-codegen/schema-ast@4.0.0(graphql@15.8.0)':
     dependencies:
       '@graphql-codegen/plugin-helpers': 5.0.4(graphql@15.8.0)
-      '@graphql-tools/utils': 10.0.7(graphql@15.8.0)
+      '@graphql-tools/utils': 10.3.2(graphql@15.8.0)
       graphql: 15.8.0
       tslib: 2.5.3
 
@@ -7667,24 +7675,24 @@ snapshots:
     dependencies:
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@graphql-tools/optimize@1.4.0(graphql@15.8.0)':
     dependencies:
       graphql: 15.8.0
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@graphql-tools/optimize@2.0.0(graphql@15.8.0)':
     dependencies:
       graphql: 15.8.0
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@graphql-tools/relay-operation-optimizer@6.5.18(encoding@0.1.13)(graphql@15.8.0)':
     dependencies:
       '@ardatan/relay-compiler': 12.0.0(encoding@0.1.13)(graphql@15.8.0)
       '@graphql-tools/utils': 9.2.1(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.6.2
+      tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -7692,9 +7700,9 @@ snapshots:
   '@graphql-tools/relay-operation-optimizer@7.0.0(encoding@0.1.13)(graphql@15.8.0)':
     dependencies:
       '@ardatan/relay-compiler': 12.0.0(encoding@0.1.13)(graphql@15.8.0)
-      '@graphql-tools/utils': 10.0.7(graphql@15.8.0)
+      '@graphql-tools/utils': 10.3.2(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.6.2
+      tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -7712,7 +7720,7 @@ snapshots:
       '@graphql-typed-document-node/core': 3.2.0(graphql@15.8.0)
       dset: 3.1.2
       graphql: 15.8.0
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@graphql-tools/utils@10.3.2(graphql@15.8.0)':
     dependencies:
@@ -7725,7 +7733,7 @@ snapshots:
   '@graphql-tools/utils@8.13.1(graphql@15.8.0)':
     dependencies:
       graphql: 15.8.0
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@graphql-tools/utils@9.2.1(graphql@15.8.0)':
     dependencies:
@@ -7946,7 +7954,7 @@ snapshots:
       '@motionone/types': 10.16.3
       '@motionone/utils': 10.16.3
       hey-listen: 1.0.8
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@motionone/dom@10.16.4':
     dependencies:
@@ -7960,13 +7968,13 @@ snapshots:
   '@motionone/easing@10.16.3':
     dependencies:
       '@motionone/utils': 10.16.3
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@motionone/generators@10.16.4':
     dependencies:
       '@motionone/types': 10.16.3
       '@motionone/utils': 10.16.3
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@motionone/svelte@10.16.4':
     dependencies:
@@ -8000,21 +8008,21 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  '@pagefind/darwin-arm64@1.0.3':
+  '@pagefind/darwin-arm64@1.1.0':
     optional: true
 
-  '@pagefind/darwin-x64@1.0.3':
+  '@pagefind/darwin-x64@1.1.0':
     optional: true
 
   '@pagefind/default-ui@1.0.4': {}
 
-  '@pagefind/linux-arm64@1.0.3':
+  '@pagefind/linux-arm64@1.1.0':
     optional: true
 
-  '@pagefind/linux-x64@1.0.3':
+  '@pagefind/linux-x64@1.1.0':
     optional: true
 
-  '@pagefind/windows-x64@1.0.3':
+  '@pagefind/windows-x64@1.1.0':
     optional: true
 
   '@pkgr/utils@2.4.2':
@@ -8024,7 +8032,7 @@ snapshots:
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@radix-ui/primitive@1.0.1':
     dependencies:
@@ -8530,7 +8538,7 @@ snapshots:
 
   '@swc/helpers@0.5.3':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   '@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.3.5)':
     dependencies:
@@ -10279,7 +10287,7 @@ snapshots:
 
   aria-hidden@1.2.3:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   aria-query@5.3.0:
     dependencies:
@@ -10658,7 +10666,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   camelcase-css@2.0.1: {}
 
@@ -10673,7 +10681,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.6.3
       upper-case-first: 2.0.2
 
   catering@2.1.1: {}
@@ -10732,7 +10740,7 @@ snapshots:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   character-entities-html4@2.1.0: {}
 
@@ -10870,7 +10878,7 @@ snapshots:
   constant-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.6.3
       upper-case: 2.0.2
 
   content-disposition@0.5.4:
@@ -11048,7 +11056,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   dotenv@16.3.1: {}
 
@@ -11059,7 +11067,7 @@ snapshots:
       prop-types: 15.7.2
       react: 17.0.2
       react-is: 17.0.2
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   dset@3.1.2: {}
 
@@ -11546,7 +11554,7 @@ snapshots:
 
   file-selector@0.6.0:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   file-uri-to-path@1.0.0: {}
 
@@ -11626,13 +11634,13 @@ snapshots:
       react: 17.0.2
       react-dom: 17.0.2(react@17.0.2)
       style-value-types: 5.0.0
-      tslib: 2.6.2
+      tslib: 2.6.3
     optionalDependencies:
       '@emotion/is-prop-valid': 0.8.8
 
   framesync@6.0.1:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   fresh@0.5.2: {}
 
@@ -11953,7 +11961,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   hey-listen@1.0.8: {}
 
@@ -12042,7 +12050,7 @@ snapshots:
       '@formatjs/ecma402-abstract': 1.17.2
       '@formatjs/fast-memoize': 2.2.0
       '@formatjs/icu-messageformat-parser': 2.7.0
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   invariant@2.2.4:
     dependencies:
@@ -12156,7 +12164,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   is-map@2.0.2: {}
 
@@ -12225,7 +12233,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   is-weakmap@2.0.1: {}
 
@@ -12484,11 +12492,11 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   lru-cache@10.0.0: {}
 
@@ -13596,7 +13604,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   node-abi@3.51.0:
     dependencies:
@@ -13761,13 +13769,13 @@ snapshots:
 
   p-try@2.2.0: {}
 
-  pagefind@1.0.3:
+  pagefind@1.1.0:
     optionalDependencies:
-      '@pagefind/darwin-arm64': 1.0.3
-      '@pagefind/darwin-x64': 1.0.3
-      '@pagefind/linux-arm64': 1.0.3
-      '@pagefind/linux-x64': 1.0.3
-      '@pagefind/windows-x64': 1.0.3
+      '@pagefind/darwin-arm64': 1.1.0
+      '@pagefind/darwin-x64': 1.1.0
+      '@pagefind/linux-arm64': 1.1.0
+      '@pagefind/linux-x64': 1.1.0
+      '@pagefind/windows-x64': 1.1.0
 
   pako@1.0.11: {}
 
@@ -13776,7 +13784,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   parent-module@1.0.1:
     dependencies:
@@ -13830,12 +13838,12 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   path-exists@4.0.0: {}
 
@@ -13888,7 +13896,7 @@ snapshots:
       framesync: 6.0.1
       hey-listen: 1.0.8
       style-value-types: 5.0.0
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   postcss-import@15.1.0(postcss@8.4.31):
     dependencies:
@@ -14172,7 +14180,7 @@ snapshots:
     dependencies:
       react: 17.0.2
       react-style-singleton: 2.2.1(@types/react@18.2.31)(react@17.0.2)
-      tslib: 2.6.2
+      tslib: 2.6.3
     optionalDependencies:
       '@types/react': 18.2.31
 
@@ -14181,7 +14189,7 @@ snapshots:
       react: 17.0.2
       react-remove-scroll-bar: 2.3.4(@types/react@18.2.31)(react@17.0.2)
       react-style-singleton: 2.2.1(@types/react@18.2.31)(react@17.0.2)
-      tslib: 2.6.2
+      tslib: 2.6.3
       use-callback-ref: 1.3.0(@types/react@18.2.31)(react@17.0.2)
       use-sidecar: 1.1.2(@types/react@18.2.31)(react@17.0.2)
     optionalDependencies:
@@ -14204,7 +14212,7 @@ snapshots:
       get-nonce: 1.0.1
       invariant: 2.2.4
       react: 17.0.2
-      tslib: 2.6.2
+      tslib: 2.6.3
     optionalDependencies:
       '@types/react': 18.2.31
 
@@ -14626,7 +14634,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.6.3
       upper-case-first: 2.0.2
 
   serve-static@1.15.0:
@@ -14791,7 +14799,7 @@ snapshots:
   snake-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   source-map-js@1.0.2: {}
 
@@ -14801,7 +14809,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   sprintf-js@1.0.3: {}
 
@@ -14929,7 +14937,7 @@ snapshots:
   style-value-types@5.0.0:
     dependencies:
       hey-listen: 1.0.8
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   sucrase@3.34.0:
     dependencies:
@@ -14959,12 +14967,12 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   synckit@0.8.5:
     dependencies:
       '@pkgr/utils': 2.4.2
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   tabbable@6.2.0: {}
 
@@ -15110,7 +15118,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   titleize@3.0.0: {}
 
@@ -15365,11 +15373,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   uri-js@4.4.1:
     dependencies:
@@ -15380,7 +15388,7 @@ snapshots:
   use-callback-ref@1.3.0(@types/react@18.2.31)(react@17.0.2):
     dependencies:
       react: 17.0.2
-      tslib: 2.6.2
+      tslib: 2.6.3
     optionalDependencies:
       '@types/react': 18.2.31
 
@@ -15421,7 +15429,7 @@ snapshots:
     dependencies:
       detect-node-es: 1.1.0
       react: 17.0.2
-      tslib: 2.6.2
+      tslib: 2.6.3
     optionalDependencies:
       '@types/react': 18.2.31
 
