@@ -6,6 +6,7 @@ interface SiteConfig {
 	ogLocale: string
 	shareMessage: string
 	paginationSize: number
+	homePaginationSize: number
 }
 
 export const siteConfig: SiteConfig = {
@@ -15,5 +16,6 @@ export const siteConfig: SiteConfig = {
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
 	shareMessage: 'Share this post', // Message to share a post on social media
-	paginationSize: 6 // Number of posts per page
+	paginationSize: 6, // Number of posts per page
+	homePaginationSize: 5 // Number of posts per page on the home page
 }
