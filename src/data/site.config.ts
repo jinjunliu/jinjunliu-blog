@@ -17,5 +17,5 @@ export const siteConfig: SiteConfig = {
 	ogLocale: 'en_GB',
 	shareMessage: 'Share this post', // Message to share a post on social media
 	paginationSize: 6, // Number of posts per page
-	homePaginationSize: 5 // Number of posts per page on the home page
+	homePaginationSize: 8 // Number of posts per page on the home page
 }
