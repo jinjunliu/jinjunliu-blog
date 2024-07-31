@@ -7,9 +7,19 @@ import { getPosts } from '@/utils'
 import { siteConfig } from '@/data/site.config'
 import Pagination from '@/components/Pagination'
 
-const allPosts = await getPosts() // get all posts
-const posts = allPosts.slice(0, siteConfig.homePaginateSize)
-const totalPages = Math.ceil(allPosts.length / siteConfig.homePaginateSize)
+// paginate all posts
+export async function getStaticPaths({ paginate }) {
+	const allPosts = await getPosts()
+	const homePageSize = siteConfig.homePaginateSize
+	return paginate(allPosts, { pageSize: homePageSize })
+}
+
+const { page } = Astro.props
+
+// redefine the url.prev to home page if the current page is the page 2
+if (page.currentPage === 2) {
+	page.url.prev = '/'
+}
 ---
 
 <BaseLayout title='Home'>
@@ -17,10 +27,10 @@ const totalPages = Math.ceil(allPosts.length / siteConfig.homePaginateSize)
 	<ListCategories />
 
 	<div>
-		<h2 class='text-lg font-medium tracking-wide text-end'>Latest Posts</h2>
-		<ListPosts FirstBig={true} posts={posts} />
+		<h2 class='text-lg font-medium tracking-wide text-end'>Page {page.currentPage}</h2>
+		<ListPosts FirstBig={page.currentPage === 1} posts={page.data} />
 	</div>
-	<Pagination page={{ currentPage: 1, lastPage: totalPages, url: { prev: '', next: '/page/2' } }} />
+	<Pagination page={page} />
 </BaseLayout>
 
 <script>
