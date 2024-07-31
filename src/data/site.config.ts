@@ -6,7 +6,6 @@ interface SiteConfig {
 	ogLocale: string
 	shareMessage: string
 	paginationSize: number
-	homePaginationSize: number
 }
 
 export const siteConfig: SiteConfig = {
