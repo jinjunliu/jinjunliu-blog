@@ -7,22 +7,25 @@ import { getPosts } from '@/utils'
 import HomePagination from '@/components/HomePagination'
 import { siteConfig } from '@/data/site.config'
 
-const homePageSize = siteConfig.homePaginateSize
-const allPosts = await getPosts()
-const posts = allPosts.slice(0, homePageSize)
-const totalPages = Math.ceil(allPosts.length / homePageSize)
+export async function getStaticPaths({ paginate }) {
+	const allPosts = await getPosts()
+	const homePageSize = siteConfig.homePaginateSize
+	return paginate(allPosts, { pageSize: homePageSize })
+}
+
+const { page } = Astro.props
 ---
 
-<BaseLayout title='Home'>
+<BaseLayout title='Blog'>
 	<TitlePage title="Jinjun Liu's Blog" />
 	<ListCategories />
 
 	<div>
 		<h2 class='text-lg font-medium tracking-wide text-end'>Latest Posts</h2>
-		<ListPosts FirstBig={true} posts={posts} />
+		<ListPosts FirstBig={page.currentPage === 1} posts={page.data} />
 	</div>
 
-	<HomePagination currentPage={1} totalPages={totalPages} />
+	<HomePagination currentPage={page.currentPage} totalPages={page.lastPage} />
 </BaseLayout>
 
 <script>
