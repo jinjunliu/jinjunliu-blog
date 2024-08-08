@@ -12,3 +12,16 @@
 .katex {
     color: blue;
 }
+
+/* For shiki */
+.shiki {
+    background-color: #292D3E !important;
+  }
+  
+  .shiki .comment {
+    color: #676E95 !important;
+  }
+  
+  .shiki .string {
+    color: #C3E88D !important;
+  }
