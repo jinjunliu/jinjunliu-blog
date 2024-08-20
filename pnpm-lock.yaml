@@ -35,13 +35,13 @@ importers:
         version: 3.1.6
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.14.2(rollup@4.19.0)(typescript@5.5.4))(tailwindcss@3.4.8)
+        version: 5.1.0(astro@4.14.2(rollup@4.19.0)(typescript@5.5.4))(tailwindcss@3.4.10)
       '@pagefind/default-ui':
         specifier: ^1.1.0
         version: 1.1.0
       '@tailwindcss/typography':
         specifier: 0.5.10
-        version: 0.5.10(tailwindcss@3.4.8)
+        version: 0.5.10(tailwindcss@3.4.10)
       '@tinacms/cli':
         specifier: ^1.5.49
         version: 1.5.49(@babel/core@7.25.2)(@babel/template@7.25.0)(@codemirror/language@6.0.0)(@types/react@18.2.31)(abstract-level@1.0.3)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(rollup@4.19.0)(scheduler@0.19.0)
@@ -94,8 +94,8 @@ importers:
         specifier: 2.4.0
         version: 2.4.0
       tailwindcss:
-        specifier: 3.4.8
-        version: 3.4.8
+        specifier: 3.4.10
+        version: 3.4.10
       tinacms:
         specifier: ^1.5.22
         version: 1.5.22(@babel/core@7.25.2)(@babel/template@7.25.0)(@types/react@18.2.31)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
@@ -5309,10 +5309,6 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.4.39:
-    resolution: {integrity: sha512-0vzE+lAiG7hZl1/9I8yzKLx3aR9Xbof3fBHKunvMfOCYAtMhrsnccJY2iTURb9EZd5+pLuiNV9/c/GZJOHsgIw==}
-    engines: {node: ^10 || ^12 || >=14}
-
   postcss@8.4.41:
     resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==}
     engines: {node: ^10 || ^12 || >=14}
@@ -6119,8 +6115,8 @@ packages:
   tailwind-merge@2.4.0:
     resolution: {integrity: sha512-49AwoOQNKdqKPd9CViyH5wJoSKsCDjUlzL8DxuGp3P1FsGY36NJDAa18jLZcaHAUUuTj+JB8IAo8zWgBNvBF7A==}
 
-  tailwindcss@3.4.8:
-    resolution: {integrity: sha512-GkP17r9GQkxgZ9FKHJQEnjJuKBcbFhMFzKu5slmN6NjlCuFnYJMQ8N4AZ6VrUyiRXlDtPKHkesuQ/MS913Nvdg==}
+  tailwindcss@3.4.10:
+    resolution: {integrity: sha512-KWZkVPm7yJRhdu4SRSl9d4AK2wM3a50UsvgHZO7xY77NQr2V+fIrEuoDGQcbvswWvFGbS2f6e+jC/6WJm1Dl0w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -6876,13 +6872,13 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.8
 
-  '@astrojs/tailwind@5.1.0(astro@4.14.2(rollup@4.19.0)(typescript@5.5.4))(tailwindcss@3.4.8)':
+  '@astrojs/tailwind@5.1.0(astro@4.14.2(rollup@4.19.0)(typescript@5.5.4))(tailwindcss@3.4.10)':
     dependencies:
       astro: 4.14.2(rollup@4.19.0)(typescript@5.5.4)
       autoprefixer: 10.4.16(postcss@8.4.31)
       postcss: 8.4.31
       postcss-load-config: 4.0.2(postcss@8.4.31)
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.10
     transitivePeerDependencies:
       - ts-node
 
@@ -8598,25 +8594,25 @@ snapshots:
     dependencies:
       tslib: 2.6.3
 
-  '@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.4.8)':
+  '@tailwindcss/aspect-ratio@0.4.2(tailwindcss@3.4.10)':
     dependencies:
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.10
 
-  '@tailwindcss/typography@0.5.10(tailwindcss@3.4.8)':
+  '@tailwindcss/typography@0.5.10(tailwindcss@3.4.10)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.10
 
-  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.8)':
+  '@tailwindcss/typography@0.5.13(tailwindcss@3.4.10)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.10
 
   '@tinacms/app@1.2.45(@babel/core@7.25.2)(@babel/template@7.25.0)(@codemirror/language@6.0.0)(@types/react@18.2.31)(abstract-level@1.0.3)(encoding@0.1.13)(scheduler@0.19.0)(yup@0.32.11)':
     dependencies:
@@ -8671,8 +8667,8 @@ snapshots:
       '@graphql-tools/load': 7.8.14(graphql@15.8.0)
       '@rollup/pluginutils': 5.0.5(rollup@4.19.0)
       '@svgr/core': 6.3.1
-      '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.4.8)
-      '@tailwindcss/typography': 0.5.13(tailwindcss@3.4.8)
+      '@tailwindcss/aspect-ratio': 0.4.2(tailwindcss@3.4.10)
+      '@tailwindcss/typography': 0.5.13(tailwindcss@3.4.10)
       '@tinacms/app': 1.2.45(@babel/core@7.25.2)(@babel/template@7.25.0)(@codemirror/language@6.0.0)(@types/react@18.2.31)(abstract-level@1.0.3)(encoding@0.1.13)(scheduler@0.19.0)(yup@0.32.11)
       '@tinacms/graphql': 1.4.37(react@17.0.2)(typescript@4.6.4)
       '@tinacms/metrics': 1.0.4(encoding@0.1.13)(fs-extra@9.1.0)
@@ -8704,7 +8700,7 @@ snapshots:
       progress: 2.0.3
       prompts: 2.4.2
       readable-stream: 4.4.2
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.10
       tinacms: 1.6.7(@babel/core@7.25.2)(@babel/template@7.25.0)(@types/react@18.2.31)(abstract-level@1.0.3)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(scheduler@0.19.0)(typescript@4.6.4)
       typanion: 3.13.0
       typescript: 4.6.4
@@ -14265,17 +14261,17 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  postcss-import@15.1.0(postcss@8.4.39):
+  postcss-import@15.1.0(postcss@8.4.41):
     dependencies:
-      postcss: 8.4.39
+      postcss: 8.4.41
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.8
 
-  postcss-js@4.0.1(postcss@8.4.39):
+  postcss-js@4.0.1(postcss@8.4.41):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.4.39
+      postcss: 8.4.41
 
   postcss-load-config@4.0.2(postcss@8.4.31):
     dependencies:
@@ -14284,16 +14280,16 @@ snapshots:
     optionalDependencies:
       postcss: 8.4.31
 
-  postcss-load-config@4.0.2(postcss@8.4.39):
+  postcss-load-config@4.0.2(postcss@8.4.41):
     dependencies:
       lilconfig: 3.0.0
       yaml: 2.4.5
     optionalDependencies:
-      postcss: 8.4.39
+      postcss: 8.4.41
 
-  postcss-nested@6.0.1(postcss@8.4.39):
+  postcss-nested@6.0.1(postcss@8.4.41):
     dependencies:
-      postcss: 8.4.39
+      postcss: 8.4.41
       postcss-selector-parser: 6.0.13
 
   postcss-selector-parser@6.0.10:
@@ -14313,12 +14309,6 @@ snapshots:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
-
-  postcss@8.4.39:
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.0.1
-      source-map-js: 1.2.0
 
   postcss@8.4.41:
     dependencies:
@@ -15378,7 +15368,7 @@ snapshots:
 
   tailwind-merge@2.4.0: {}
 
-  tailwindcss@3.4.8:
+  tailwindcss@3.4.10:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -15394,11 +15384,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.0.1
-      postcss: 8.4.39
-      postcss-import: 15.1.0(postcss@8.4.39)
-      postcss-js: 4.0.1(postcss@8.4.39)
-      postcss-load-config: 4.0.2(postcss@8.4.39)
-      postcss-nested: 6.0.1(postcss@8.4.39)
+      postcss: 8.4.41
+      postcss-import: 15.1.0(postcss@8.4.41)
+      postcss-js: 4.0.1(postcss@8.4.41)
+      postcss-load-config: 4.0.2(postcss@8.4.41)
+      postcss-nested: 6.0.1(postcss@8.4.41)
       postcss-selector-parser: 6.0.13
       resolve: 1.22.8
       sucrase: 3.34.0
