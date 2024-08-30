@@ -8,9 +8,12 @@ export async function GET(context: any) {
 		title: siteConfig.title,
 		description: siteConfig.description,
 		site: context.site,
-		items: posts.map((post) => ({
-			...post.data,
-			link: `post/${post.slug}/`
-		}))
+		// filter out drafts
+		items: posts
+			.filter((post) => !post.data.draft)
+			.map((post) => ({
+				...post.data,
+				link: `post/${post.slug}/`
+			}))
 	})
 }
