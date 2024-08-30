@@ -15,8 +15,8 @@ importers:
         specifier: 4.14.2
         version: 4.14.2(rollup@4.19.0)(typescript@5.5.4)
       astro-font:
-        specifier: ^0.0.81
-        version: 0.0.81
+        specifier: ^0.1.81
+        version: 0.1.81
       katex:
         specifier: ^0.16.11
         version: 0.16.11
@@ -2825,8 +2825,8 @@ packages:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro-font@0.0.81:
-    resolution: {integrity: sha512-VmK4kqzNpOAt2LASVbw2cbbe9sD6K30E7jOjqzHxHieHMTWInkdOljtzHmNGvKr3P0MeF4Wy+Z7j6CdETFecDA==}
+  astro-font@0.1.81:
+    resolution: {integrity: sha512-rbrv/+ZSYdgyjBlhkAqfCjMxqqo6iEwnSo/rAdDt/POILsF0ChxMFhefIIzKEukrRGtVjEj1lrLRYk+AdV9scQ==}
 
   astro@4.14.2:
     resolution: {integrity: sha512-x9VeYx8Ih6kYKBMVwwsfRzsZVq30+SUhiawnYQ6+46qQnEx3zH05KcH24HsJMe6dVpHD8HdH7CWR5C4o7Q/jeg==}
@@ -10098,7 +10098,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro-font@0.0.81: {}
+  astro-font@0.1.81: {}
 
   astro@4.14.2(rollup@4.19.0)(typescript@5.5.4):
     dependencies:
