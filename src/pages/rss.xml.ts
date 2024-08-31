@@ -8,12 +8,12 @@ export async function GET(context: any) {
 		title: siteConfig.title,
 		description: siteConfig.description,
 		site: context.site,
-		// filter out drafts
 		items: posts
 			.filter((post) => !post.data.draft)
 			.map((post) => ({
 				...post.data,
-				link: `post/${post.slug}/`
+				link: `post/${post.slug}/`,
+				content: post.body // This is the full Markdown content of the post
 			}))
 	})
 }
