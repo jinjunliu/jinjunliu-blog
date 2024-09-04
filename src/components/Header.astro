@@ -3,6 +3,7 @@ import HeaderLink from '@/components/HeaderLink'
 import TwitterIcon from '@/components/icons/TwitterIcon'
 import GithubIcon from '@/components/icons/GithubIcon'
 import HomepageIcon from './icons/HomepageIcon.astro'
+import RssIcon from './icons/RssIcon.astro'
 import MenuIcon from './icons/MenuIcon.astro'
 import Search from '@/components/Search'
 import TagIcon from './icons/TagIcon.astro'
@@ -11,11 +12,15 @@ import ToggleTheme from './ToggleTheme.astro'
 // ADD YOUR SOCIAL NETWORKS HERE
 const SOCIALNETWORKS = [
 	{
+		name: 'RSS',
+		url: '/rss.xml',
+		icon: RssIcon
+	},
+	{
 		name: 'Github',
 		url: 'https://github.com/jinjunliu/jinjunliu-blog',
 		icon: GithubIcon
 	},
-
 	{
 		name: 'Homepage',
 		url: 'https://jinjunliu.com/',
