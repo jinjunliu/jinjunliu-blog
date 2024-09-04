@@ -27,7 +27,7 @@ const URL = Astro.url.href
 		</li>
 		<!-- Copy link address -->
 		<li>
-			<button @click='navigator.clipboard.writeText(${URL})' aria-label='Copy link'>
+			<button @click={`navigator.clipboard.writeText${URL}`} aria-label='Copy link'>
 				<CopyIcon />
 			</button>
 		</li>
