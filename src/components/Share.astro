@@ -2,6 +2,7 @@
 import { siteConfig } from '@/data/site.config'
 import TwitterColorIcon from './icons/TwitterColorIcon.astro'
 import LinkedinIcon from './icons/linkedinIcon.astro'
+import CopyIcon from './icons/CopyIcon.astro'
 const message = siteConfig.shareMessage
 
 const URL = Astro.url.href
@@ -27,7 +28,7 @@ const URL = Astro.url.href
 		<!-- Copy link address -->
 		<li>
 			<button onclick="navigator.clipboard.writeText('${URL}')" aria-label='Copy link'>
-				Copy link
+				<CopyIcon />
 			</button>
 		</li>
 	</ul>
