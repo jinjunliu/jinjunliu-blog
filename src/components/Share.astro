@@ -12,7 +12,7 @@ const URL = Astro.url.href
 	<ul class='flex gap-3 text-black dark:text-white'>
 		<li>
 			<a
-				href={`https://twitter.com/intent/tweet?text=${message + ' ' + URL}`}
+				href={`https://x.com/intent/tweet?text=${message + ' ' + URL}`}
 				aria-label='Share on Twitter'><TwitterColorIcon /></a
 			>
 		</li>
@@ -23,6 +23,12 @@ const URL = Astro.url.href
 			>
 				<LinkedinIcon /></a
 			>
+		</li>
+		<!-- Copy link address -->
+		<li>
+			<button onclick="navigator.clipboard.writeText('${URL}')" aria-label='Copy link'>
+				Copy link
+			</button>
 		</li>
 	</ul>
 </div>
