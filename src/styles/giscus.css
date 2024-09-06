@@ -6,7 +6,7 @@
 
 /* Default styles for larger screens */
 .giscus-frame {
-    width: calc(100% - 200px); /* Adjust 200px to match your index column width */
+    width: calc(100% - 270px); /* Adjust 270px to match your index column width */
     max-width: 100%;
     margin-left: auto;
     margin-right: 0;
