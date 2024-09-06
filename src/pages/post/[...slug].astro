@@ -8,7 +8,9 @@ import TableOfContents from '@/components/TableOfContents'
 import { getPosts } from '@/utils'
 import SButton from '@/components/mdx/SButton'
 import Disqus from '@/components/Disqus'
+import Utterances from '@/components/Utterances'
 import { disqusConfig } from '@/data/disqus.config'
+import { utterancesConfig } from '@/data/utterances.config'
 
 const posts = await getCollection('blog')
 export async function getStaticPaths() {
@@ -36,6 +38,7 @@ const relatedPosts = getRelatedPosts(post)
 const { Content, headings, remarkPluginFrontmatter } = await post.render()
 
 const disqusEnabled = disqusConfig.enabled
+const utterancesEnabled = utterancesConfig.enabled
 ---
 
 <BlogPost
@@ -66,6 +69,12 @@ const disqusEnabled = disqusConfig.enabled
 			</footer>
 		</article>
 	</div>
-
-	{disqusEnabled && <Disqus />}
+    <!-- if both disqus and utterances enabled, use utterances -->
+    {disqusEnabled && utterancesEnabled ? (
+        <Utterances />
+    ) : disqusEnabled ? (
+        <Disqus />
+    ) : utterancesEnabled ? (
+        <Utterances />
+    ) : null}
 </BlogPost>

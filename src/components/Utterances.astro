@@ -1,0 +1,25 @@
+---
+import { utterancesConfig } from "@/data/utterances.config";
+---
+
+<!-- ref: https://vitaneri.com/posts/how-to-integrate-utterances-with-astro -->
+<div class='mx-auto px-6 sm:px-6 max-w-3xl pt-8 md:pt-4 pb-12 md:pb-20'>
+    <div id='utterances-container'></div>
+    <script define:vars={{ repo: utterancesConfig.repo }}>
+        const script = document.createElement("script");
+        const container = document.querySelector("#utterances-container");
+      
+        Object.entries({
+          src: "https://utteranc.es/client.js",
+          repo: repo,
+          "issue-term": "pathname",
+          label: "post comments",
+          theme: localStorage.getItem("theme") === "dark" ? "github-dark" : "github-light",
+          crossorigin: "anonymous",
+        }).forEach(([key, value]) => {
+          script.setAttribute(key, value);
+        });
+
+        container?.appendChild(script);
+    </script>
+</div>
