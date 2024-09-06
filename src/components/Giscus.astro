@@ -25,9 +25,10 @@ import "../styles/giscus.css";
 <script define:vars={{ repo: giscusConfig.repo, repoId: giscusConfig.repoId, category: giscusConfig.category, categoryId: giscusConfig.categoryId }}>
     const script = document.createElement("script");
     const container = document.querySelector("#giscus-comment");
+    const src_link = "https://giscus.app/client.js"; // alternatively, you can use local copy of the script at "/src/utils/giscus.js"
   
     Object.entries({
-      src: "https://giscus.app/client.js",
+      src: src_link,
       "data-repo": repo,
       "data-repo-id": repoId,
       "data-category": category,
