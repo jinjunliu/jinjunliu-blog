@@ -1,0 +1,13 @@
+/*! Custom CSS */
+.giscus {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Align the frame with the blog content, excluding the index column */
+.giscus-frame {
+    width: 76.5%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+}

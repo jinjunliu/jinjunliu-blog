@@ -1,0 +1,48 @@
+---
+import { giscusConfig } from "@/data/giscus.config";
+import "../styles/giscus.css";
+---
+
+<!-- the following is copied from Giscus -->
+
+<!-- <script src="https://giscus.app/client.js"
+        data-repo="jinjunliu/jinjunliu-blog"
+        data-repo-id="R_kgDOMX2sKw"
+        data-category="General"
+        data-category-id="DIC_kwDOMX2sK84CiRBx"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script> -->
+
+<div id="giscus-comment"></div>
+<script define:vars={{ repo: giscusConfig.repo, repoId: giscusConfig.repoId, category: giscusConfig.category, categoryId: giscusConfig.categoryId }}>
+    const script = document.createElement("script");
+    const container = document.querySelector("#giscus-comment");
+  
+    Object.entries({
+      src: "https://giscus.app/client.js",
+      "data-repo": repo,
+      "data-repo-id": repoId,
+      "data-category": category,
+      "data-category-id": categoryId,
+      "data-mapping": "pathname",
+      "data-strict": "0",
+      "data-reactions-enabled": "1",
+      "data-emit-metadata": "0",
+      "data-input-position": "bottom",
+      "data-theme": localStorage.getItem("theme") === "dark" ? "dark" : "light",
+      "data-lang": "en",
+      crossorigin: "anonymous",
+      async: true,
+    }).forEach(([key, value]) => {
+      script.setAttribute(key, value);
+    });
+    container?.appendChild(script);
+</script>
