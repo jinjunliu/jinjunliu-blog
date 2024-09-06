@@ -12,8 +12,8 @@
     margin-right: 0;
 }
 
-/* Media query for smaller screens (e.g., phones) */
-@media screen and (max-width: 768px) { /* Adjust 768px if needed */
+/* Media query for smaller screens (e.g., phones and tablets) */
+@media screen and (max-width: 768px) { /* Adjust 768px to match your media query */
     .giscus-frame {
         width: 100%;
         margin-left: 0;
