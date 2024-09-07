@@ -2,10 +2,6 @@
 import { getCategories } from '@/utils'
 import Category from '@/components/Category'
 const categories = await getCategories()
-
-// add an extra category to the list: 'Gallery'
-categories.push('Gallery')
-
 const { activeCategory } = Astro.props
 ---
 
