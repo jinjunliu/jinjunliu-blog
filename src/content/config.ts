@@ -19,4 +19,19 @@ const blog = defineCollection({
 		})
 })
 
-export const collections = { blog }
+const albums = defineCollection({
+    type: "data",
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            description: z.string().optional(),
+            cover: image(),
+            pubDate: z
+            .string()
+            .or(z.date())
+            .transform((val) => new Date(val)),
+            category: z.enum(["Albums"])
+        })
+})
+
+export const collections = { blog, albums }
