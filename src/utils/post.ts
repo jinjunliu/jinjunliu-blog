@@ -2,6 +2,8 @@ import { getCollection } from 'astro:content'
 
 export const getCategories = async () => {
 	const posts = await getCollection('blog')
+    const albums = await getCollection('albums')
+    posts.push(...albums)
 	const categories = new Set(
 		posts.filter((post) => !post.data.draft).map((post) => post.data.category)
 	)
@@ -13,6 +15,11 @@ export const getPosts = async (max?: number) => {
 		.filter((post) => !post.data.draft)
 		.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 		.slice(0, max)
+}
+
+export const getAlbums = async () => {
+    return (await getCollection('albums'))
+        .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 }
 
 export const getTags = async () => {
