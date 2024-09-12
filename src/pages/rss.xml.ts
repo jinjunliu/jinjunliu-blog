@@ -10,8 +10,8 @@ export async function GET(context: any) {
     
     return rss({
         title: siteConfig.title,
-        // description: siteConfig.description,
-        description: 'feedId:52443064995444736+userId:46735639826583552',
+        description: siteConfig.description,
+        // description: 'feedId:52443064995444736+userId:46735639826583552',
         site: context.site,
         items: sortedPosts.map((post) => ({
             ...post.data,
