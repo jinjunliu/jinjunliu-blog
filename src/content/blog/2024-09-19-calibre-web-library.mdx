@@ -37,7 +37,7 @@ draft: false
 
 ## 3. 添加域名并反向代理
 
-为了让我们可以通过自己的域名访问 Calibre-Web，我们可以在 1Panel 中添加网站，并通过反向代理将其指向 Calibre-Web 的端口。
+为了通过自己的域名访问 Calibre-Web，可以在 1Panel 中添加网站，并通过反向代理将其指向 Calibre-Web 的端口。
 
 假设你的个人域名是`example.com`，在 1Panel 中进入“网站”管理，点击“创建网站”，主域名输入你想使用的域名，例如：`calibre.example.com`，类型选反向代理，代理地址填入`127.0.0.1:40109`，如下图所示：
 
@@ -64,12 +64,14 @@ draft: false
 
 在网站`calibre.example.com`的设置中，将 **HTTPS** 那一栏开启 **启用HTTPS**，并选择你刚刚申请的证书。这样，我们就可以通过 HTTPS 访问 Calibre-Web 了。打开浏览器，输入`calibre.example.com`，能看到已经启用了 HTTPS 的 Calibre-Web 页面。
 
+![Calibre-Web HTTPS](../../assets/images/2024-09-19-calibre-web-library-2.png)
+
 ## 7. 修改管理员密码和开启上传功能
 
-初次登录 Calibre-Web 后，强烈建议立即修改管理员密码，并启用上传功能。
+初次登录 Calibre-Web 后，强烈建议**立即修改管理员账号密码**，并启用上传功能。
 
 1. 默认管理员账号是 `admin`，密码是 `admin123`。
-2. 登录后，进入设置页面，修改管理员密码以增强安全性。
+2. 登录后，进入设置页面，修改管理员用户名和密码。
 3. 在设置中，还可以启用电子书上传功能，允许你直接在网页上上传新的电子书到你的个人书库中。
 
 如果你不想别人注册使用你的 Calibre-Web，可以在设置中关闭注册功能。
